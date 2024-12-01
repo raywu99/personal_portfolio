@@ -11,7 +11,7 @@
 
 #skip:focus {
     display: inline-block;
-    left: 10px;
+    left: 100px;
     z-index: 1000;
 }
 
@@ -345,6 +345,15 @@ textarea {
     transition: all 0.3s ease;
 }
 
+h1 {
+    color: #1E56C3; 
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+
 .name-left, .name-right {
     font-family: "Lato", sans-serif;
     color: #1E56C3;
@@ -528,7 +537,7 @@ textarea {
 /* laptop view */
 @media screen and (min-width:1024px) {
     header, .container, .footer{
-        padding: 0 15%;
+        padding: 0 12%;
     }
 
 
