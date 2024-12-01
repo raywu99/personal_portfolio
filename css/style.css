@@ -147,7 +147,7 @@ header, .container, .footer{
 
 .footer-copyright, .footer span {
     font-size: 0.8rem;
-    color: rgb(110, 110, 110);
+    color: rgb(134, 134, 134);
     font-weight: bold;
 }
 
@@ -374,7 +374,7 @@ h1 {
 .name-right {
     text-align: right;
     margin-top: -100px;
-    opacity: 0.2;
+    opacity: 0.65;
 }
 
 .intro{
@@ -561,7 +561,6 @@ h1 {
     .name-right {
         text-align: right;
         margin-top: -10rem;
-        opacity: 0.2;
     }
 
     .greeting {
