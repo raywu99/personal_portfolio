@@ -1,0 +1,568 @@
+* {
+    font-family: "Lato", sans-serif;
+}
+
+#skip {
+    position: absolute;
+    left: -400px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#skip:focus {
+    display: inline-block;
+    left: 10px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 10px;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow effect */
+}
+
+
+.menu a {
+    font-weight: 600;
+}
+
+
+
+
+/* reference: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menuItem:hover {
+    color: #1E56C3;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: white solid 1px;
+  background: white;
+  cursor: pointer;
+  color: black;
+}
+
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: white;
+  opacity: 0.9;
+  color: white;
+  list-style: none;
+  padding-top: 8rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+
+/* Footer Styling */
+
+header, .container, .footer{
+    padding: 0 1rem;
+}
+
+.footer{
+    margin: 6rem 0 2rem 0;
+}
+
+.footer-section {
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+    border-radius: 1rem; /* Rounded corners */
+    /* margin: 24px 16px; Add some space above the footer */
+    padding: 64px;
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Spacing between links */
+    margin-bottom: 30px; /* Space between links and copyright */
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-copyright, .footer span {
+    font-size: 0.8rem;
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+}
+
+
+/* About Me Page */
+
+.profile-image {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    margin: 3rem 0;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: black;
+    opacity: 0.7;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.skills {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skills h2, .soft-skills h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 42px;
+    color: black;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.tech-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.tech-skill-item img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+    object-fit: contain;
+}
+
+.soft-skills {
+    text-align: center;
+
+}
+
+.soft-skills-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.soft-skills-list li {
+    margin-bottom: 10px;
+}
+
+/* Contact Page */
+.contact {
+    text-align: left;
+    margin: 20px auto;
+    /* max-width: 400px; */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: "Lato", sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.submit-button{
+    background-color: #1E56C3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 50px auto;
+    width: 200px;
+}
+
+.submit-button:hover {
+    background-color: #d43d3d;
+}
+
+.inquiry-text {
+    color: black; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.inquiry-text a {
+    color: #1E56C3; 
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+/* Homa page */
+
+/* Top Section Styling */
+.greeting {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #444;
+    margin-top: 20px;
+}
+
+.name{
+    margin: 20px 0 ;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Tags Styling */
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.tag {
+    font-size: 0.8rem;
+    color: #000;
+    /* background-color: #f2f2f2; */
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px 10px;
+    cursor: default;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.name-left, .name-right {
+    font-family: "Lato", sans-serif;
+    color: #1E56C3;
+    font-size: 10rem;
+    font-weight: 900;
+}
+
+.name-left {
+    text-align: left;
+}
+
+.name-right {
+    text-align: right;
+    margin-top: -100px;
+    opacity: 0.2;
+}
+
+.intro{
+    margin-bottom: 96px;
+}
+
+/* Work Item Styling */
+
+
+.selected-work h2 {
+    font-size: 1.2rem; /* Slightly larger font size */
+    text-transform: uppercase; /* Converts text to uppercase */
+    color: #1E56C3;
+    font-weight: 400; /* Semi-bold for emphasis */
+    letter-spacing: 1.5px;
+    margin: 30px 0;
+}
+
+.work-item-group{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between items */
+}
+
+.work-image {
+    overflow: hidden; /* Ensures the zoom effect doesn't overflow the container */
+    border-radius: 1rem;
+}
+
+.work-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.work-image:hover img {
+    transform: scale(1.1); /* Zoom in by 10% */
+}
+
+.work-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 24px; /* Add spacing between items */
+}
+
+
+.work-content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.work-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.footer-tittle{
+    display: none;
+}
+
+
+/* ipad view */
+@media screen and (min-width:768px) {
+    header, .container, .footer{
+        padding: 0 3rem;
+    }
+
+
+    header .hamburger {
+        display: none;
+    }
+
+    header .menu {
+        display: flex; /* Show the menu as a flex container */
+        flex-direction: row;
+        justify-content: flex-end; /* Align menu items to the right */
+        gap: 1px; /* Add space between menu items */
+        position: static; /* Ensure menu is positioned normally */
+        transform: none; /* Reset any transform from mobile state */
+        padding: 0 16px; /* Reset padding for the desktop view */
+    }
+
+    header .menu a {
+        font-size: 1.2rem; /* Slightly smaller font size */
+        margin: 0px 0px;
+    }
+
+    header .menu {
+        gap: 1.2rem;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:4rem;
+    }
+
+    .name-image {
+        flex: 1;
+    }
+    .descriptive-text{
+        flex: 1;
+    }
+
+    .work-item {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .work-image{
+        flex: 0.618;
+    }
+
+    .work-content{
+        flex: 0.382;
+    }
+
+    .intro{
+        margin-bottom: 4rem;
+    }
+
+    .skills{
+        flex-direction: row;
+        gap: 2rem;
+        margin: 10rem 0;
+        justify-content: space-between;
+    }
+    .skills > div {
+        flex: 1;
+    }
+
+    .profile-image {
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+        margin: 3rem 0;
+    }  
+
+    .skills h2, .soft-skills h2 {
+        margin-top: 0px;
+        margin-bottom: 6rem;
+    }
+
+    .footer-tittle{
+        display: block;
+        font-size: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+        font-weight: 700;
+    }
+
+    .footer-section, .work-image {
+        border-radius: 2rem;
+    }
+
+}
+
+/* laptop view */
+@media screen and (min-width:1024px) {
+    header, .container, .footer{
+        padding: 0 15%;
+    }
+
+
+    header .menu {
+        gap: 4rem;
+    }
+
+    .name-left, .name-right{
+        font-size: 16rem;
+        position: relative;
+        color: #1E56C3;
+        font-weight: 900;
+    }
+
+    .name-right {
+        text-align: right;
+        margin-top: -10rem;
+        opacity: 0.2;
+    }
+
+    .greeting {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #444;
+        margin-top: 40px;
+    }
+
+    .profile-image img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+    }
+
+    .description {
+        font-size: 1.8rem;
+    }
+}
