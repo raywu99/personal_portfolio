@@ -7,12 +7,18 @@
     left: -400px;
     background-color: #ffffff;
     padding: 10px;
+    color: #1E56C3;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 #skip:focus {
     display: inline-block;
-    left: 100px;
-    z-index: 1000;
+    left: 10px;
+    top: 10px;
+    z-index: 1000000;
 }
 
 .logo {
