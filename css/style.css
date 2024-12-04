@@ -252,7 +252,6 @@ header, .container, .footer{
 form {
     display: flex;
     flex-direction: column;
-
 }
 
 label {
@@ -536,6 +535,11 @@ h1 {
 
     .footer-section, .work-image {
         border-radius: 2rem;
+    }
+
+    form {
+        width: 60%;
+        margin: auto;
     }
 
 }
